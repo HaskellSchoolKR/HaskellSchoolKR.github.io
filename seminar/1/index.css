@@ -1,0 +1,9 @@
+main {
+    scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+}
+
+section.page {
+    scroll-snap-type: center;
+    -ms-scroll-snap-type: center;
+}

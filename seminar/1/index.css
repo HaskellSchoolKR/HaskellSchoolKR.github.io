@@ -209,10 +209,11 @@ main::-webkit-scrollbar {
 
     font-size: 72px;
     color: rgb(255,255,255);
+    color: rgba(255,255,255,0.9);
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 .page#title > #typing-title > span {

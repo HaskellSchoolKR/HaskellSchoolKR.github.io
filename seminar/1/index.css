@@ -51,6 +51,8 @@ main::-webkit-scrollbar {
 .sticky-menu {
     position: relative;
 
+    padding: 1px;
+
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.7);
 
@@ -68,6 +70,36 @@ main::-webkit-scrollbar {
     height: 40px;
 
     font-size: 24px;
+}
+
+@media screen and (max-width: 1080px) {
+    .sticky-menu-item {
+        margin: 10px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sticky-menu-item {
+        margin: 20px 7px;
+
+        width: 20px;
+        height: 20px;
+
+        font-size: 16px;
+    }
+
+    .sticky-menu-item:first-of-type {
+        margin-top: 7px;
+    }
+
+    .sticky-menu-item:last-of-type {
+        margin-bottom: 7px;
+    }
 }
 
 .sticky-menu-item > a {
@@ -138,6 +170,26 @@ main::-webkit-scrollbar {
     opacity: 1;
 }
 
+@media screen and (max-width: 1080px) {
+    .sticky-menu-item > a + span {
+        right: 20px;
+    }
+
+    .sticky-menu-item > a:hover + span {
+        right: 33px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sticky-menu-item > a + span {
+        right: 15px;
+    }
+
+    .sticky-menu-item > a:hover + span {
+        right: 22px;
+    }
+}
+
 .sticky-menu-item > a > .icon-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -158,6 +210,18 @@ main::-webkit-scrollbar {
     align-items: center;
 }
 
+@media screen and (max-width: 1080px) {
+    .sticky-menu-item > a > .icon-wrapper {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sticky-menu-item > a > .icon-wrapper {
+        width: 20px;
+    }
+}
+
 .sticky-menu-item > a:hover > .icon-wrapper {
     color: rgb(255,255,255);
 }
@@ -176,19 +240,26 @@ main::-webkit-scrollbar {
 /* title page */
 .page#title {
     position: relative;
+    display: flex;
 
     z-index: 1;
 
     background: rgb(213,198,224);
     background: -o-linear-gradient(150deg,rgb(245,230,232) 0%,rgb(213,198,224) 25%,rgb(170,161,200) 75%);
     background: linear-gradient(-60deg,rgb(245,230,232) 0%,rgb(213,198,224) 25%,rgb(170,161,200) 75%);
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .page#title > #typing-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -217,10 +288,18 @@ main::-webkit-scrollbar {
     font-size: 72px;
     color: rgb(255,255,255);
     color: rgba(255,255,255,0.9);
+}
 
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+@media screen and (max-width: 1080px) {
+    .page#title > #typing-title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page#title > #typing-title {
+        font-size: 24px;
+    }
 }
 
 .page#title > #typing-title > span {
@@ -246,6 +325,28 @@ main::-webkit-scrollbar {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
+}
+
+@media screen and (max-width: 1080px) {
+    .page#title > #typing-title > span > svg {
+        width: auto;
+        height: 52px;
+    }
+
+    .page#title > #typing-title > .typing-title-subscript {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page#title > #typing-title > span > svg {
+        width: auto;
+        height: 30px;
+    }
+
+    .page#title > #typing-title > .typing-title-subscript {
+        font-size: 16px;
+    }
 }
 
 .page#title > #typing-title > span > .typing-effect-cursor {
@@ -342,6 +443,30 @@ main::-webkit-scrollbar {
     animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 1080px) {
+    .page#title > #typing-title + .next-page {
+        bottom: 20px;
+
+        font-size: 40px;
+    }
+
+    .page#title > #typing-title.done + .next-page {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page#title > #typing-title + .next-page {
+        bottom: 30px;
+
+        font-size: 30px;
+    }
+
+    .page#title > #typing-title.done + .next-page {
+        bottom: 40px;
+    }
+}
+
 .page#about-haskell-school-kr {
     background: rgb(150,122,161);
 }
@@ -369,5 +494,27 @@ main::-webkit-scrollbar {
     }
     70% {
         bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    @keyframes next-page {
+        0% {
+            bottom: 30px;
+        }
+        70% {
+            bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    @keyframes next-page {
+        0% {
+            bottom: 40px;
+        }
+        70% {
+            bottom: 30px;
+        }
     }
 }

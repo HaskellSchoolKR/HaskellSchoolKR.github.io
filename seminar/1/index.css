@@ -12,6 +12,7 @@ main {
     height: 100vh;
     overflow-y: scroll;
 
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     -ms-scroll-snap-type: y mandatory;
 

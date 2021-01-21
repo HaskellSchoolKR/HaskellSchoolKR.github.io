@@ -58,6 +58,8 @@ const typingEffect = (target) => {
       case 3:
         registerStage4();
         break;
+      case 5:
+        target.className += ' done';
       default:
         break;
       }

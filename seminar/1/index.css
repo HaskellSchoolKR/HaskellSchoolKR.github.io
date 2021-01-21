@@ -44,15 +44,27 @@ main::-webkit-scrollbar {
 }
 
 .sticky-menu {
+    position: relative;
+
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.7);
+
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
     list-style: none;
 }
 
 .sticky-menu-item {
+    position: relative;
     margin: 10px;
+
+    width: 40px;
     height: 40px;
 }
 
 .sticky-menu-item > a {
+    right: 0;
     display: flex;
 
     height: 100%;
@@ -60,7 +72,8 @@ main::-webkit-scrollbar {
     justify-content: right;
     align-items: center;
 
-    color: black;
+    color: rgb(240,240,240);
+    color: rgba(255,255,255,0.7);
     text-decoration: none;
     font-size: 24px;
 }
@@ -69,16 +82,39 @@ main::-webkit-scrollbar {
 }
 
 .sticky-menu-item > a > span {
-    display: none;
+    position: absolute;
+
+    right: 30px;
+
+    padding: 3px;
+
+    visibility: hidden;
+
+    opacity: 0;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.7);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    color: rgb(255,255,255);
+
+    white-space: nowrap;
+
+    transition-property: right,opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
 
-.sticky-menu-item:hover > a > span {
-    display: block;
+.sticky-menu-item > a > .icon-wrapper:hover + span {
+    right: 55px;
+
+    visibility: visible;
+
+    opacity: 1;
 }
 
 .sticky-menu-item > a > .icon-wrapper {
     display: flex;
-    margin-left: 10px;
 
     width: 40px;
     height: 100%;
@@ -87,7 +123,26 @@ main::-webkit-scrollbar {
     align-items: center;
 }
 
-.page.title-page {
-    background: rgb(213,198,224,1);
-    background: linear-gradient(-60deg, rgb(245,230,232) 0%, rgb(213,198,224) 25%, rgb(170,161,200) 75%);
+.sticky-menu-item > a > .icon-wrapper:hover {
+    color: rgb(255,255,255);
+}
+
+.page#title {
+    background: rgb(213,198,224);
+    background: linear-gradient(-60deg,rgb(245,230,232) 0%,rgb(213,198,224) 25%,rgb(170,161,200) 75%);
+}
+
+.page#about-haskell-school-kr {
+    background: rgb(150,122,161);
+}
+
+.page#schedule.day {
+    background: rgb(245,230,232);
+}
+.page#schedule.night {
+    background: rgb(25,42,81);
+}
+
+.page#about-seminar-team {
+    background: rgb(170, 161, 200);
 }

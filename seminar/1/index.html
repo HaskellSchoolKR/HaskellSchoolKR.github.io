@@ -2,27 +2,62 @@
 <html>
     <!-- See https://github.com/joshbuchea/HEAD -->
     <head>
-        <base href="/" />
+        <base href="." />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>한국 하스켈 학교 제 1회 세미나</title>
-        <link rel="stylesheet" href="/seminar/1/index.css" />
+
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="../../fontawesome-free-5.15.2-web/css/all.min.css" />
     </head>
     <body>
         <main>
-            <section class="page">
+            <nav class="sticky-menu-wrapper">
+                <ul class="sticky-menu">
+                    <li class="sticky-menu-item">
+                        <a href="#title">
+                            <span>메인 화면</span>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-home"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sticky-menu-item">
+                        <a href="#about-haskell-school-kr">
+                            <span>하스켈 학교 소개</span>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-school"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sticky-menu-item">
+                        <a href="#schedule">
+                            <span>발표 일정</span>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sticky-menu-item">
+                        <a href="#about-seminar-team">
+                            <span>세미나 기획진 소개</span>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="title" class="page title-page">
                 메인화면
-                <nav>
-                    메뉴?
-                </nav>
             </section>
-            <section class="page">
+            <section id="about-haskell-school-kr" class="page">
                 하스켈 학교 소개
             </section>
-            <section class="page">
+            <section id="schedule" class="page">
                 발표 일정
             </section>
-            <section class="page">
+            <section id="about-seminar-team" class="page">
                 세미나 기획진 소개
             </section>
         </main>

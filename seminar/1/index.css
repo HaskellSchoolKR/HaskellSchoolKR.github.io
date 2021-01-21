@@ -136,13 +136,10 @@ main::-webkit-scrollbar {
     background: rgb(150,122,161);
 }
 
-.page#schedule.day {
+.page#schedule {
     background: rgb(245,230,232);
-}
-.page#schedule.night {
-    background: rgb(25,42,81);
 }
 
 .page#about-seminar-team {
-    background: rgb(170, 161, 200);
+    background: rgb(25,42,81);
 }

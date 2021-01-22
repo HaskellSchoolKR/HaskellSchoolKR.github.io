@@ -286,7 +286,7 @@ main::-webkit-scrollbar {
     flex-wrap: wrap;
 
     font-size: 72px;
-    color: rgb(255,255,255);
+    color: rgb(250,250,250);
     color: rgba(255,255,255,0.9);
 }
 
@@ -356,7 +356,7 @@ main::-webkit-scrollbar {
     margin: 5px;
     margin-left: -2px;
 
-    background: rgb(255,255,255);
+    background: rgb(250,250,250);
     background: rgba(255,255,255,0.9);
 
     -webkit-animation-name: typing-effect-cursor-blinking;
@@ -404,7 +404,7 @@ main::-webkit-scrollbar {
     visibility: hidden;
 
     font-size: 60px;
-    color: rgb(255,255,255);
+    color: rgb(250,250,250);
     color: rgba(255,255,255,0.9);
 
     -webkit-transform: translateX(-50%);
@@ -503,7 +503,7 @@ main::-webkit-scrollbar {
     background: rgb(170,161,200,0.8);
     border-radius: 10px;
 
-    color: rgb(255,255,255);
+    color: rgb(240,240,240);
     color: rgba(255,255,255,0.92);
 }
 
@@ -521,6 +521,14 @@ main::-webkit-scrollbar {
 
 .page#schedule .schedule-table tr {
     margin: 10px;
+
+    height: 40px;
+}
+
+.page#schedule .schedule-table tr.ongoing {
+    border-bottom: solid black 1px;
+    color: rgb(245,230,232);
+    color: rgb(245,230,232,0.92);
 }
 
 .page#schedule .schedule-table > tbody td:first-child {
@@ -550,7 +558,7 @@ main::-webkit-scrollbar {
     flex-grow: 1;
     height: 1px;
 
-    background: rgb(255,255,255);
+    background: rgb(240,240,240);
     background: rgba(255,255,255,0.92);
 }
 
@@ -579,19 +587,33 @@ main::-webkit-scrollbar {
     flex-grow: 1;
 }
 
-.page#schedule .schedule-table .presentation-summary {
-    display: none;
-
-    padding: 0 40px;
-
-    word-break: keep-all;
-    color: rgb(255,255,255);
-    color: rgb(255,255,255,0.92);
+.page#schedule .schedule-table .presentation-presenter {
     font-size: 18px;
 }
 
-.page#schedule .schedule-table .presentation-summary.visible {
+.page#schedule .schedule-table .presentation-summary {
+    position: relative;
     display: block;
+
+    line-height: 0;
+    margin: 0 60px 0 20px;
+
+    word-break: keep-all;
+    font-size: 18px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 300ms ease-out, line-height 300ms 300ms ease-out, visibility 0s 600ms;
+}
+
+.page#schedule .schedule-table .presentation-summary.visible {
+    line-height: 1;
+
+    visibility: visible;
+    opacity: 1;
+
+    transition: line-height 300ms ease-in, opacity 300ms 300ms ease-in, visibility 0s 300ms;
 }
 
 /* Seminar Team detail page */

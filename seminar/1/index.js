@@ -203,8 +203,50 @@ const typingEffect = (target) => {
   registerStage0();
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  const typingTitle = document.getElementById('typing-title');
+const typingTitle = document.getElementById('typing-title');
 
-  typingEffect(typingTitle);
-});
+typingEffect(typingTitle);
+
+const togglePresentationSummary = (e) => {
+  const d = e.currentTarget;
+  const s = d.querySelector('.presentation-summary');
+  const c = Array.from(s.classList);
+  const i = c.indexOf('visible');
+  if (i === -1) {
+    c.push('visible');
+    s.className = c.join(' ');
+  } else {
+    c.splice(i, 1);
+    s.className = c.join(' ');
+  }
+};
+
+const toSeminarDayTime = (t) => new Date('2021/02/20 ' + t + ' UTC+9').valueOf();
+
+const schedules = Array.from(document.querySelectorAll('.schedule-table tbody tr')).map((e) => [
+  e,
+  toSeminarDayTime(e.dataset.timeStart),
+  toSeminarDayTime(e.dataset.timeEnd),
+]);
+
+const ongoingUpdate = () => {
+  const now = Date.now();
+  schedules.forEach((sc) => {
+    const c = Array.from(sc[0].classList);
+    const i = c.indexOf('ongoing');
+    if (sc[1] < now && now < sc[2]) {
+      if (i === -1) {
+        c.push('ongoing');
+        sc[0].className = c.join(' ');
+      }
+    } else {
+      if (i !== -1) {
+        c.splice(i, 1);
+        sc.className = c.join(' ');
+      }
+    }
+  });
+};
+
+ongoingUpdate();
+window.setInterval(ongoingUpdate, 10000);

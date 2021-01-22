@@ -501,6 +501,7 @@ main::-webkit-scrollbar {
 
     background: rgb(170,161,200);
     background: rgb(170,161,200,0.8);
+    -webkit-border-radius: 10px;
     border-radius: 10px;
 
     color: rgb(240,240,240);
@@ -512,9 +513,8 @@ main::-webkit-scrollbar {
 }
 
 .page#schedule .schedule-table {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
+    margin-bottom: 0;
 
     font-size: 20px;
 }
@@ -555,7 +555,9 @@ main::-webkit-scrollbar {
 
     display: inline-block;
 
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
     height: 1px;
 
     background: rgb(240,240,240);
@@ -604,6 +606,8 @@ main::-webkit-scrollbar {
     visibility: hidden;
     opacity: 0;
 
+    -webkit-transition: opacity 300ms ease-out, line-height 300ms 300ms ease-out, visibility 0s 600ms;
+    -o-transition: opacity 300ms ease-out, line-height 300ms 300ms ease-out, visibility 0s 600ms;
     transition: opacity 300ms ease-out, line-height 300ms 300ms ease-out, visibility 0s 600ms;
 }
 
@@ -613,6 +617,8 @@ main::-webkit-scrollbar {
     visibility: visible;
     opacity: 1;
 
+    -webkit-transition: line-height 300ms ease-in, opacity 300ms 300ms ease-in, visibility 0s 300ms;
+    -o-transition: line-height 300ms ease-in, opacity 300ms 300ms ease-in, visibility 0s 300ms;
     transition: line-height 300ms ease-in, opacity 300ms 300ms ease-in, visibility 0s 300ms;
 }
 

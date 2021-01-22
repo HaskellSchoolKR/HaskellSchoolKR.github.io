@@ -481,7 +481,7 @@ main::-webkit-scrollbar {
     display: flex;
 
     background: rgb(245,230,232);
-    background: url("./triangulation.png");
+    background: url("./triangulation.png") center/cover;
 
     -webkit-box-pack: center;
     -webkit-justify-content: center;

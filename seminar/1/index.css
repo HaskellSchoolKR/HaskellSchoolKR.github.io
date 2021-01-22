@@ -467,14 +467,134 @@ main::-webkit-scrollbar {
     }
 }
 
+/* Haskell School KR detail page */
 .page#about-haskell-school-kr {
     background: rgb(150,122,161);
 }
 
+/* schedule page */
 .page#schedule {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
     background: rgb(245,230,232);
+    background: url("./triangulation.png");
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
+.page#schedule article {
+    width: 1000px;
+
+    padding: 40px 100px;
+
+    background: rgb(170,161,200);
+    background: rgb(170,161,200,0.8);
+    border-radius: 10px;
+
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0.92);
+}
+
+.page#schedule h2 {
+    font-size: 32px;
+}
+
+.page#schedule .schedule-table {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 20px;
+}
+
+.page#schedule .schedule-table tr {
+    margin: 10px;
+}
+
+.page#schedule .schedule-table > tbody td:first-child {
+    width: 150px;
+}
+
+.page#schedule .schedule-table .seminar-event {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page#schedule .schedule-table .seminar-event::before, .page#schedule .schedule-table .seminar-event::after {
+    content: "";
+
+    display: inline-block;
+
+    flex-grow: 1;
+    height: 1px;
+
+    background: rgb(255,255,255);
+    background: rgba(255,255,255,0.92);
+}
+
+.page#schedule .schedule-table .presentation-detail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 700px;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page#schedule .schedule-table .presentation-title {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.page#schedule .schedule-table .presentation-summary {
+    display: none;
+
+    padding: 0 40px;
+
+    word-break: keep-all;
+    color: rgb(255,255,255);
+    color: rgb(255,255,255,0.92);
+    font-size: 18px;
+}
+
+.page#schedule .schedule-table .presentation-summary.visible {
+    display: block;
+}
+
+/* Seminar Team detail page */
 .page#about-seminar-team {
     background: rgb(25,42,81);
 }

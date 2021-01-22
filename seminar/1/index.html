@@ -34,8 +34,6 @@
 
         <link rel="stylesheet" href="./index.css" />
         <link rel="stylesheet" href="../../fontawesome-free-5.15.2-web/css/all.min.css" />
-
-        <script src="./index.js"></script>
     </head>
     <body>
         <main>
@@ -85,71 +83,113 @@
                 하스켈 학교 소개
             </section>
             <section id="schedule" class="page">
-                <h1>세미나 일정</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>일시</th>
-                            <th>발표</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <h3>숫자를 세는 방식과 함수형 데이터 구조의 관계</h3>
-                                <h4>오현석</h4>
-                                <article>
-                                    2진수, 0 없는 이진수, 치우친 2진수 등 다양한 수 표기법과 이런 표기법에 해당하는 함수형 데이터 구조의 관계를 통해 순수 함수형 데이터 구조를 소개합니다.
-                                </article>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <h3>Simply Typed Lambda Calculus: 구현과 성질</h3>
-                                <h4>장준영</h4>
-                                <article>
-                                    Simply Typed Lambda Calculus(STLC)는 강타입 함수형 언어의 근본이 되는 가장 중요하고 가장 간단한 체계 중 하나입니다. 본 발표에서는 STLC이 왜 중요한지, STLC를 어떻게 구현하며 그 구현이 어떤 특징을 가지는지를 소개합니다.
-                                </article>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <h3>프로그래머를 위한 하스켈</h3>
-                                <h4>서재원</h4>
-                                <article>
-                                    <!-- 채워넣어 주세요 -->
-                                </article>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <h3>ST 모나드와 다형성</h3>
-                                <h4>문순원</h4>
-                                <article>
-                                    ST 모나드가 필요한 이유와 rank 2 type, rank n type, 그리고 runST를 통한 ST 모나드 사용법을 소개합니다.
-                                </article>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <h3>λProlog로 나만의 타입 체커 만들기</h3>
-                                <h4>임기정</h4>
-                                <article>
-                                    Haskell, OCaml 등 여러 함수형 언어가 사용하는 타입 시스템인 System F의 타입 체커를 λProlog로 만드는 방법을 소개합니다.
-                                </article>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <article>
+                    <h2>세미나 일정</h2>
+                    <table class="schedule-table">
+                        <tbody>
+                            <tr data-time-start="9:50" data-time-end="10:00">
+                                <td colspan="2">
+                                    <span class="seminar-event">
+                                        여는 말 (9:50 - 10:00)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr data-time-start="10:00" data-time-end="10:30">
+                                <td>10:00 - 10:30</td>
+                                <td>
+                                    <div class="presentation-detail">
+                                        <h3 class="presentation-title">숫자를 세는 방식과 함수형 데이터 구조의 관계</h3>
+                                        <h4 class="presentation-presenter">오현석</h4>
+                                        <p class="presentation-summary">
+                                            2진수, 0 없는 이진수, 치우친 2진수 등의 다양한 수 표기법과 이런 표기법에 해당하는 함수형 데이터 구조의 관계를 통해 순수 함수형 데이터 구조를 소개합니다.
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-time-start="10:30" data-time-end="11:00">
+                                <td>10:30 - 11:00</td>
+                                <td>
+                                    <div class="presentation-detail">
+                                        <h3 class="presentation-title">Simply Typed Lambda Calculus: 구현과 성질</h3>
+                                        <h4 class="presentation-presenter">장준영</h4>
+                                        <p class="presentation-summary">
+                                            Simply Typed Lambda Calculus(STLC)는 강타입 함수형 언어의 근본이 되는 가장 중요하고 가장 간단한 체계 중 하나입니다. 본 발표에서는 STLC이 왜 중요한지, STLC를 어떻게 구현하며 그 구현이 어떤 특징을 가지는지를 소개합니다.
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-time-start="11:00" data-time-end="12:00">
+                                <td colspan="2">
+                                    <span class="seminar-event">
+                                        네트워킹 (11:00 - 12:00)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr data-time-start="12:00" data-time-end="13:00">
+                                <td colspan="2">
+                                    <span class="seminar-event">
+                                        점심시간 (12:00 - 13:00)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr data-time-start="13:00" data-time-end="13:30">
+                                <td>13:00 - 13:30</td>
+                                <td>
+                                    <div class="presentation-detail">
+                                        <h3 class="presentation-title">프로그래머를 위한 하스켈</h3>
+                                        <h4 class="presentation-presenter">서재원</h4>
+                                        <p class="presentation-summary">
+                                            <!-- 채워넣어 주세요 -->
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-time-start="13:30" data-time-end="14:00">
+                                <td>13:30 - 14:00</td>
+                                <td>
+                                    <div class="presentation-detail">
+                                        <h3 class="presentation-title">ST 모나드와 다형성</h3>
+                                        <h4 class="presentation-presenter">문순원</h4>
+                                        <p class="presentation-summary">
+                                            ST 모나드가 필요한 이유와 rank 2 type, rank n type, 그리고 runST를 통한 ST 모나드 사용법을 소개합니다.
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-time-start="14:00" data-time-end="14:30">
+                                <td>14:00 - 14:30</td>
+                                <td>
+                                    <div class="presentation-detail">
+                                        <h3 class="presentation-title">λProlog로 나만의 타입 체커 만들기</h3>
+                                        <h4 class="presentation-presenter">임기정</h4>
+                                        <p class="presentation-summary">
+                                            Haskell, OCaml 등 여러 함수형 언어가 사용하는 타입 시스템인 System F의 타입 체커를 λProlog로 만드는 방법을 소개합니다.
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-time-start="14:30" data-time-end="16:30">
+                                <td colspan="2">
+                                    <span class="seminar-event">
+                                        네트워킹 (14:30 - 16:30)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr data-time-start="16:30" data-time-end="16:40">
+                                <td colspan="2">
+                                    <span class="seminar-event">
+                                        닫는 말 (16:30 - 16:40)
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
             </section>
             <section id="about-seminar-team" class="page">
                 세미나 기획진 소개
             </section>
         </main>
+        <script src="./index.js"></script>
     </body>
 </html>

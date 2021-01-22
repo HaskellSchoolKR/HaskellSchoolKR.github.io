@@ -72,7 +72,7 @@ main::-webkit-scrollbar {
     font-size: 24px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .sticky-menu-item {
         margin: 10px;
 
@@ -83,7 +83,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .sticky-menu-item {
         margin: 20px 7px;
 
@@ -170,7 +170,7 @@ main::-webkit-scrollbar {
     opacity: 1;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .sticky-menu-item > a + span {
         right: 20px;
     }
@@ -180,7 +180,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .sticky-menu-item > a + span {
         right: 15px;
     }
@@ -210,13 +210,13 @@ main::-webkit-scrollbar {
     align-items: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .sticky-menu-item > a > .icon-wrapper {
         width: 30px;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .sticky-menu-item > a > .icon-wrapper {
         width: 20px;
     }
@@ -290,13 +290,13 @@ main::-webkit-scrollbar {
     color: rgba(255,255,255,0.9);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .page#title > #typing-title {
         font-size: 40px;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .page#title > #typing-title {
         font-size: 24px;
     }
@@ -327,7 +327,7 @@ main::-webkit-scrollbar {
     align-items: flex-end;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .page#title > #typing-title > span > svg {
         width: auto;
         height: 52px;
@@ -338,7 +338,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .page#title > #typing-title > span > svg {
         width: auto;
         height: 30px;
@@ -443,7 +443,7 @@ main::-webkit-scrollbar {
     animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .page#title > #typing-title + .next-page {
         bottom: 20px;
 
@@ -455,7 +455,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .page#title > #typing-title + .next-page {
         bottom: 30px;
 
@@ -508,8 +508,50 @@ main::-webkit-scrollbar {
     color: rgba(255,255,255,0.92);
 }
 
+@media screen and (max-width: 1366px) {
+    .page#schedule article {
+        width: 700px;
+
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule article {
+        width: 500px;
+
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page#schedule article {
+        width: 250px;
+
+        padding: 10px 30px;
+    }
+}
+
 .page#schedule h2 {
     font-size: 32px;
+}
+
+@media screen and (max-width: 1366px) {
+    .page#schedule h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page#schedule h2 {
+        font-size: 20px;
+    }
 }
 
 .page#schedule .schedule-table {
@@ -519,10 +561,46 @@ main::-webkit-scrollbar {
     font-size: 20px;
 }
 
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table {
+        margin-top: 30px;
+
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table {
+        margin-top: 20px;
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page#schedule .schedule-table {
+        margin-top: 15px;
+
+        font-size: 12px;
+    }
+}
+
 .page#schedule .schedule-table tr {
     margin: 10px;
 
     height: 40px;
+}
+
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table tr {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table tr {
+        height: 25px;
+    }
 }
 
 .page#schedule .schedule-table tr.ongoing {
@@ -533,6 +611,12 @@ main::-webkit-scrollbar {
 
 .page#schedule .schedule-table > tbody td:first-child {
     width: 150px;
+}
+
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table > tbody td:first-child {
+        width: 100px;
+    }
 }
 
 .page#schedule .schedule-table .seminar-event {
@@ -548,6 +632,18 @@ main::-webkit-scrollbar {
 
     font-size: 24px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table .seminar-event {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table .seminar-event {
+        font-size: 14px;
+    }
 }
 
 .page#schedule .schedule-table .seminar-event::before, .page#schedule .schedule-table .seminar-event::after {
@@ -582,15 +678,54 @@ main::-webkit-scrollbar {
     align-items: center;
 }
 
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table .presentation-detail {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table .presentation-detail {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page#schedule .schedule-table .presentation-detail {
+        width: 200px;
+    }
+}
+
 .page#schedule .schedule-table .presentation-title {
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table .presentation-title {
+        width: 100%;
+    }
+}
+
+.page#schedule .schedule-table .presentation-presenter {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+
+    text-align: right;
+    font-size: 18px;
 }
 
-.page#schedule .schedule-table .presentation-presenter {
-    font-size: 18px;
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table .presentation-presenter {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table .presentation-presenter {
+        font-size: 10px;
+    }
 }
 
 .page#schedule .schedule-table .presentation-summary {
@@ -611,8 +746,28 @@ main::-webkit-scrollbar {
     transition: opacity 300ms ease-out, line-height 300ms 300ms ease-out, visibility 0s 600ms;
 }
 
+@media screen and (max-width: 1366px) {
+    .page#schedule .schedule-table .presentation-summary {
+        margin: 0 40px 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table .presentation-summary {
+        margin: 0 35px 0 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#schedule .schedule-table .presentation-summary {
+        margin: 0 30px 0 20px;
+    }
+}
+
 .page#schedule .schedule-table .presentation-summary.visible {
-    line-height: 1;
+    line-height: 1.3;
 
     visibility: visible;
     opacity: 1;
@@ -645,7 +800,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     @keyframes next-page {
         0% {
             bottom: 30px;
@@ -656,7 +811,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     @keyframes next-page {
         0% {
             bottom: 40px;

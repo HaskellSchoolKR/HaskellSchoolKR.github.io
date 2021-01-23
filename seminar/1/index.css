@@ -676,6 +676,8 @@ main::-webkit-scrollbar {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1366px) {

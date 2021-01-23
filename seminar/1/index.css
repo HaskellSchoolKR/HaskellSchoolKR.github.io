@@ -781,7 +781,123 @@ main::-webkit-scrollbar {
 
 /* Seminar Team detail page */
 .page#about-seminar-team {
-    background: rgb(25,42,81);
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    background: linear-gradient(rgba(25,42,81,0.8),rgba(25,42,81,0.8)) center/cover, url("./seoul.jpg") center/cover;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page#about-seminar-team .profiles {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-grow: 1;
+
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.page#about-seminar-team .profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 30px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    background: rgb(128,128,128);
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0.92);
+}
+
+.page#about-seminar-team .profile .profile-picture {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 20px;
+
+    background: rgb(255,255,255);
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+
+    color: rgb(25,42,81);
+    color: rgba(25,42,81,0.8);
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page#about-seminar-team .profile .profile-detail {
+    margin-top: 40px;
+
+    padding: 10px 20px;
+
+    background: rgb(255,255,255);
+    background: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    color: rgb(0,0,0,0.9);
+}
+
+.page#about-seminar-team .profile hr {
+    margin: 15px 0;
+}
+
+.page#about-seminar-team .profile ul {
+    list-style: none;
+}
+
+.page#about-seminar-team .profile address > a {
+    color: inherit;
+
+    text-decoration: none;
 }
 
 @-webkit-keyframes next-page {

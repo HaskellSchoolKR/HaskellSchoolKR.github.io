@@ -762,7 +762,7 @@ main::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .page#schedule .schedule-table .presentation-summary {
         margin: 0 30px 0 20px;
     }
@@ -813,10 +813,27 @@ main::-webkit-scrollbar {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .page#about-seminar-team .profiles {
+        height: 100%;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
 
 .page#about-seminar-team .profile {
@@ -842,8 +859,47 @@ main::-webkit-scrollbar {
     background: rgba(0,0,0,0.5);
     border-radius: 20px;
 
+    font-size: 16px;
     color: rgb(255,255,255);
     color: rgba(255,255,255,0.92);
+}
+
+@media screen and (max-width: 768px) {
+    .page#about-seminar-team .profile {
+        padding: 20px;
+
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page#about-seminar-team .profile {
+        padding: 10px;
+
+        font-size: 12px;
+    }
+}
+
+.page#about-seminar-team .profile h3 {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1366px) {
+    .page#about-seminar-team .profile h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#about-seminar-team .profile h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page#about-seminar-team .profile h3 {
+        font-size: 16px;
+    }
 }
 
 .page#about-seminar-team .profile .profile-picture {
@@ -852,10 +908,10 @@ main::-webkit-scrollbar {
     display: -ms-flexbox;
     display: flex;
 
+    margin-bottom: 20px;
+
     width: 150px;
     height: 150px;
-
-    margin-bottom: 20px;
 
     background: rgb(255,255,255);
     background: rgba(255,255,255,0.9);
@@ -875,6 +931,24 @@ main::-webkit-scrollbar {
     align-items: center;
 }
 
+@media screen and (max-width: 1366px) {
+    .page#about-seminar-team .profile .profile-picture {
+        margin-bottom: 15px;
+
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#about-seminar-team .profile .profile-picture {
+        margin-bottom: 10px;
+
+        width: 100px;
+        height: 100px;
+    }
+}
+
 .page#about-seminar-team .profile .profile-detail {
     margin-top: 40px;
 
@@ -883,11 +957,35 @@ main::-webkit-scrollbar {
     background: rgb(255,255,255);
     background: rgba(255,255,255,0.9);
     border-radius: 5px;
+
+    font-size: 16px;
     color: rgb(0,0,0,0.9);
+}
+
+@media screen and (max-width: 1366px) {
+    .page#about-seminar-team .profile .profile-detail {
+        margin-top: 30px;
+
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#about-seminar-team .profile .profile-detail {
+        margin-top: 20px;
+
+        font-size: 12px;
+    }
 }
 
 .page#about-seminar-team .profile hr {
     margin: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .page#about-seminar-team .profile hr {
+        margin: 10px 0;
+    }
 }
 
 .page#about-seminar-team .profile ul {

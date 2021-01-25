@@ -11,12 +11,20 @@ html, body {
     overflow: hidden;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
 /************************************************************
  * Main Screen
  ************************************************************/
 main {
     height: 100vh;
     overflow-y: scroll;
+
+    font-family: 'Nanum Gothic', sans-serif;
 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -46,6 +54,8 @@ main::-webkit-scrollbar {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 .sticky-menu {
@@ -123,7 +133,6 @@ main::-webkit-scrollbar {
 
     color: rgb(240,240,240);
     color: rgba(255,255,255,0.7);
-    text-decoration: none;
 }
 
 .sticky-menu-item > a + span {
@@ -257,6 +266,8 @@ main::-webkit-scrollbar {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 .page#title > #typing-title {
@@ -394,7 +405,34 @@ main::-webkit-scrollbar {
     }
 }
 
-.page#title > #typing-title + .next-page {
+.page#title > #typing-title ~ .registration {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    z-index: 2;
+
+    font-size: 60px;
+    color: rgb(250,250,250);
+    color: rgba(255,255,255,0.9);
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1366px) {
+    .page#title > #typing-title ~ .registration {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page#title > #typing-title ~ .registration {
+        font-size: 24px;
+    }
+}
+
+.page#title > #typing-title ~ .next-page {
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -427,7 +465,7 @@ main::-webkit-scrollbar {
     transition-delay: 1s;
 }
 
-.page#title > #typing-title.done + .next-page {
+.page#title > #typing-title.done ~ .next-page {
     bottom: 20px;
 
     opacity: 1;
@@ -444,25 +482,25 @@ main::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1366px) {
-    .page#title > #typing-title + .next-page {
+    .page#title > #typing-title ~ .next-page {
         bottom: 20px;
 
         font-size: 40px;
     }
 
-    .page#title > #typing-title.done + .next-page {
+    .page#title > #typing-title.done ~ .next-page {
         bottom: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .page#title > #typing-title + .next-page {
+    .page#title > #typing-title ~ .next-page {
         bottom: 30px;
 
         font-size: 30px;
     }
 
-    .page#title > #typing-title.done + .next-page {
+    .page#title > #typing-title.done ~ .next-page {
         bottom: 40px;
     }
 }
@@ -787,6 +825,8 @@ main::-webkit-scrollbar {
     display: -ms-flexbox;
     display: flex;
 
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(25,42,81,0.8)),to(rgba(25,42,81,0.8))) center/cover, url("./seoul.jpg") center/cover;
+    background: -o-linear-gradient(rgba(25,42,81,0.8),rgba(25,42,81,0.8)) center/cover, url("./seoul.jpg") center/cover;
     background: linear-gradient(rgba(25,42,81,0.8),rgba(25,42,81,0.8)) center/cover, url("./seoul.jpg") center/cover;
 
     -webkit-box-pack: center;

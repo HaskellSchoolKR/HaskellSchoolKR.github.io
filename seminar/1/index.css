@@ -412,6 +412,7 @@ main::-webkit-scrollbar {
     z-index: 2;
 
     font-size: 60px;
+    white-space: nowrap;
     color: rgb(250,250,250);
     color: rgba(255,255,255,0.9);
 

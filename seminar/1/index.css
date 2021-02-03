@@ -506,11 +506,6 @@ main::-webkit-scrollbar {
     }
 }
 
-/* Haskell School KR detail page */
-.page#about-haskell-school-kr {
-    background: rgb(150,122,161);
-}
-
 /* schedule page */
 .page#schedule {
     position: relative;
@@ -1039,6 +1034,12 @@ main::-webkit-scrollbar {
     text-decoration: none;
 }
 
+/* Haskell School KR detail page */
+.page#about-haskell-school-kr {
+    background: rgb(150,122,161);
+}
+
+/* Other CSS */
 @-webkit-keyframes next-page {
     50% {
         visibility: hidden;

@@ -949,12 +949,12 @@ main::-webkit-scrollbar {
     width: 150px;
     height: 150px;
 
-    background: rgb(255,255,255);
-    background: rgba(255,255,255,0.9);
+    background: rgb(33,56,108);
+    background: rgba(255,255,255,0.1);
     border-radius: 50%;
 
-    color: rgb(25,42,81);
-    color: rgba(25,42,81,0.8);
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0.8);
 
     -webkit-box-pack: center;
     -webkit-justify-content: center;

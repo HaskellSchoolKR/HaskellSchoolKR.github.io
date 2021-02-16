@@ -467,6 +467,10 @@ main::-webkit-scrollbar {
     }
 }
 
+.page#title > #typing-title ~ .registration > .struck {
+    text-decoration: line-through;
+}
+
 .page#title > #typing-title ~ .next-page {
     position: absolute;
     left: 50%;
